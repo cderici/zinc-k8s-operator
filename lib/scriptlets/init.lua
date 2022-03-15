@@ -7,6 +7,7 @@
 -- Juju (or whatever system uses the scriptlet) defines the
 -- representation of CONFIG
 
+OBJ = 'JUJU'
 CONFIG = {{'name-of-scriptlet-file', -- (relative to .)
 	   'pre-deploy', -- custom name that the scriptlet author uses
 	   -- to communicate with the host system (e.g. tells Juju to
