@@ -1,4 +1,4 @@
--- This is the scriptlet that is defined in CONFIG as
+-- This is the scriptlet that is defined in PARAMETERS as
 --
 -- {name-of-scriptlet-file, pre-deploy, 'patches the port of the unit before deploying'}
 

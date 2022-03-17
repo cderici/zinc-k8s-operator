@@ -1,4 +1,4 @@
--- This is the scriptlet that is defined in CONFIG as
+-- This is the scriptlet that is defined in PARAMETERS as
 --
 -- {another-scriptlet-file, teardown, 'helps charm to teardown'}
 
