@@ -1,11 +1,7 @@
 local juju = {}
 
 function juju.register_scriptlet(scriptlet)
-   print(string.format("registered scriptlet for tag : %s -- %s", scriptlet.tag, scriptlet.description))
-end
-
-function juju.initiate()
-   initiate()
+   register_scriptlet(scriptlet)
 end
 
 function juju.change_env(modified_env)
