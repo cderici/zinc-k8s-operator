@@ -3,7 +3,7 @@ juju = require "juju"
 local pre_deploy = {} -- this is just to demonstrate that a single
 		      -- scriptlet can be used just as a lua module
 
-function pre_deploy.handler()
+function pre_deploy.scriptlet()
 
    -- get some sort of a representation for the charm context
    charm_env = juju.get_charm_env()
@@ -16,9 +16,8 @@ function pre_deploy.handler()
 end
 
 
-
 juju.register_scriptlet({
-      scriptlet = pre_deploy.handler,
+      scriptlet = pre_deploy.scriptlet,
       tag = 'pre-deploy',
       description = 'patches the port of the unit before deploying'
 })

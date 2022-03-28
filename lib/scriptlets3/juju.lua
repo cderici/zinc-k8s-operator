@@ -5,24 +5,23 @@ function juju.register_scriptlet(scriptlet)
 end
 
 function juju.initiate()
-   print "init"
+   initiate()
 end
 
 function juju.change_env(modified_env)
-   print("communicate the modified env to juju")
+   print("send the modified env to juju")
+   -- maybe use the delta approach?
+   register_env_delta()
 end
 
 function juju.get_charm_env()
-   print("getting a table for the charm env")
+   print("getting some representation for charm environment")
+   return get_charm_env()
 end
 
-function juju.set_charm_env(modified_env)
-   print(string.format("setting new charm env : %s", modified_env))
-end
-
-
-function juju.some_helper(x, y)
-   print("running helper")
+function juju.get_some_state_info()
+   print "getting some state info"
+   return provide_some_state_info()
 end
 
 
